@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+html,
+body {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    height: 100%;
+}
+
+
+*,
+*::after *::before {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-hidden {
+    visibility: hidden;
+    position: absolute;
+}
+
+.container {
+    width: 274px;
+    height: 502px;
+    background-color: hsl(216, 50%, 16%);
+    margin-top: 138px;
+    padding: 1.25rem;
+    border-radius: 10px;
+}
+
+.img-nft {
+    position: relative;
+    margin-bottom: 25px;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.img-nft:hover .view {
+    display: block;
+}
+
+.img-nft img {
+    width: 100%;
+    display: block;
+
+}
+
+.view {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%, .5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    display: none;
+}
+
+.view:hover {
+    opacity: 1;
+    transition: .5s;
+}
+
+.view img {
+    position: absolute;
+    width: 20%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nft-info .name-nft {
+    width: 61%;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.26rem;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+
+.nft-info .name-nft:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.nft-info .des {
+    color: hsl(215, 51%, 70%);
+    font-size: 1.03rem;
+    line-height: 24px;
+}
+
+.price-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 19px auto;
+}
+
+.left-side,
+.right-side,
+.creator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+    font-weight: bold;
+    font-size: 0.90rem;
+    letter-spacing: 0.03rem;
+    margin: 3px;
+}
+
+.right-side img {
+    transform: scale(0.9);
+    margin-right: 5px;
+}
+
+.days {
+    color: hsl(215, 51%, 70%);
+    font-size: 0.94rem;
+}
+
+hr {
+    border-color: hsl(215, 32%, 27%);
+}
+
+.creator {
+    margin-top: 14px;
+    justify-content: start;
+}
+
+.creator img {
+    width: 10%;
+    height: 10%;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 100%;
+}
+
+.creator .creator-name {
+    color: hsl(215, 51%, 70%);
+    font-size: 0.95rem;
+    margin: 0 14px;
+}
+
+.creator .creator-name .name {
+    cursor: pointer;
+}
+
+.creator .creator-name span.name:hover {
+    color: hsl(178, 100%, 50%)
+}
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
